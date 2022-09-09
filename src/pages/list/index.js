@@ -12,7 +12,7 @@ export function ListPage() {
     async function fetchList() {
       try {
         const response = await axios.get(
-          `https://ironrest.herokuapp.com/list/${id}`
+          `https://ironrest.herokuapp.com/listCompraAR/${id}`
         );
 
         setList({ ...response.data });
