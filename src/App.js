@@ -1,17 +1,15 @@
-import {Routes, Route} from "react-router-dom";
-import {Home} from "./pages/Home";
-import {Navbar} from "./components/Navbar"
+import { Routes, Route } from "react-router-dom";
+import { listItens } from "./pages/listItens";
 
 
 function App() {
-  return (<>
-    <h1>Pop</h1>
-    <Navbar />
+  return (
+    <div>
     <Routes>
-        <Routes path="/" element={<Home />} />
+      <Route path="/listItens" element={<listItens />} />
     </Routes>
-    </>
-    );
+  </div>
+  ); 
 }
 
 export default App;
