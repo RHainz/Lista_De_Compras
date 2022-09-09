@@ -51,7 +51,9 @@ export function ListItens() {
         type="number"
         value={form.quantity}
         onChange={handleChange}
+
       />
+
 
       <button type="submit">Send</button>
     </form>
