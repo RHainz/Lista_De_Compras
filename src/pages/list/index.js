@@ -4,7 +4,7 @@ import axios from "axios";
 
 export function ListPage() {
   const { id } = useParams();
-  const [Shoppinglist, setList] = useState({});
+  const [ListPage, setList] = useState({});
 
   console.log(list);
 
@@ -27,7 +27,6 @@ export function ListPage() {
     <>
       <h1>{List.productName}</h1>
       <p>{List.productQuantity}</p>
-      <p>{List.productPicture}</p>
     </>
   );
 }
