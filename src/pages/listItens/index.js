@@ -3,7 +3,7 @@ import axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 
-export function listItens() {
+export function ListItens() {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
@@ -51,7 +51,7 @@ export function listItens() {
         type="number"
         value={form.quantity}
         onChange={handleChange}
-      />s      
+      />      
 
       <button type="submit">Send</button>
     </form>

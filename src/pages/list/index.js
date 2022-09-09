@@ -6,7 +6,7 @@ export function ListPage() {
   const { id } = useParams();
   const [Shoppinglist, setList] = useState({});
 
-  console.log(list);
+  console.log(ListPage);
 
   useEffect(() => {
     async function fetchList() {
@@ -25,9 +25,9 @@ export function ListPage() {
 
   return (
     <>
-      <h1>{List.productName}</h1>
-      <p>{List.productQuantity}</p>
-      <p>{List.productPicture}</p>
+      <h1>{ListPage.productName}</h1>
+      <p>{ListPage.productQuantity}</p>
+      <p>{ListPage.productPicture}</p>
     </>
   );
 }
