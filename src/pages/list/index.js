@@ -6,7 +6,7 @@ export function ListPage() {
   const { id } = useParams();
   const [ListPage, setList] = useState({});
 
-  console.log(list);
+  console.log(ListPage);
 
   useEffect(() => {
     async function fetchList() {
