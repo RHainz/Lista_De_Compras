@@ -26,7 +26,7 @@ export function ListPage() {
   return (
     <>
       <h1>{ListPage.productName}</h1>
-      <p>{ListPage.productQuantity}</p>     
+      <p>{ListPage.productQuantity}</p>
     </>
   );
 }
