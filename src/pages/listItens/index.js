@@ -21,7 +21,7 @@ export function listItens() {
 
     try {
       const response = await axios.post(
-        "https://ironrest.herokuapp.com/list",
+        "https://ironrest.herokuapp.com/listCompraAR",
         form
       );
 
