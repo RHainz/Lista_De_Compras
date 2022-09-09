@@ -30,7 +30,9 @@ export function Home () {
             {mercadorias.map((currentMer) => {
                 return (
                     <Link to={`/${currentMer._id}`}>
-                        <h2>{currentMer.productName}</h2>{" "}
+                        <h2>{currentMer.productName}</h2>
+                        {" "}
+                        <h3>{currentMer.quantity}</h3>
                     </Link>
                 );
             })}
